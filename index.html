@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title data-i18n="app_title"></title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+  <a class="skip-link" href="#main" data-i18n="skip_to_content"></a>
+
+  <header class="header" role="banner">
+    <div class="brand" aria-label="App name" data-i18n="app_name"></div>
+
+    <nav aria-label="Primary">
+      <ul class="nav">
+        <li><a href="#/stopwatch" data-link data-i18n="stopwatch"></a></li>
+        <li><a href="#/pomodoro" data-link data-i18n="pomodoro"></a></li>
+        <li><a href="#/history" data-link data-i18n="history"></a></li>
+      </ul>
+    </nav>
+
+    <div class="actions">
+      <select id="lang" aria-label="Language" data-i18n="language">
+        <option value="en">English</option>
+        <option value="hi">हिन्दी</option>
+        <option value="mr">मराठी</option>
+        <option value="gu">ગુજરાતી</option>
+        <option value="ta">தமிழ்</option>
+        <option value="te">తెలుగు</option>
+        <option value="kn">ಕನ್ನಡ</option>
+        <option value="bn">বাংলা</option>
+        <option value="pa">ਪੰਜਾਬੀ</option>
+      </select>
+
+      <button id="themeBtn" class="btn" aria-pressed="false" title="Toggle theme"></button>
+    </div>
+  </header>
+
+  <main id="main" tabindex="-1"></main>
+
+  <!-- Stopwatch View -->
+  <template id="stopwatch-template">
+    <section class="card" aria-labelledby="sw-title">
+      <h2 id="sw-title" data-i18n="stopwatch"></h2>
+
+      <div class="time" id="sw-time" aria-live="polite" aria-atomic="true">00:00.00</div>
+
+      <div class="controls">
+        <button id="sw-start" class="btn primary" data-i18n="start" aria-keyshortcuts="Space"></button>
+        <button id="sw-pause" class="btn" data-i18n="pause"></button>
+        <button id="sw-lap" class="btn" data-i18n="lap" aria-keyshortcuts="L"></button>
+        <button id="sw-reset" class="btn outline" data-i18n="reset"></button>
+      </div>
+
+      <div class="table-wrap">
+        <input id="lap-search" class="input" data-i18n="search_laps" placeholder="" aria-label="" />
+
+        <table class="table" aria-label="Lap times">
+          <thead>
+            <tr>
+              <th><button class="th" data-sort="idx">#</button></th>
+              <th><button class="th" data-sort="split" data-i18n="split"></button></th>
+              <th><button class="th" data-sort="total" data-i18n="total"></button></th>
+            </tr>
+          </thead>
+          <tbody id="sw-laps"></tbody>
+        </table>
+
+        <div class="pager" role="navigation" aria-label="Lap pagination">
+          <button class="btn" id="lap-prev">◀</button>
+          <span id="lap-page" aria-live="polite">1</span>
+          <button class="btn" id="lap-next">▶</button>
+        </div>
+      </div>
+    </section>
+  </template>
+
+  <!-- Pomodoro View -->
+  <template id="pomodoro-template">
+    <section class="card" aria-labelledby="pm-title">
+      <h2 id="pm-title" data-i18n="pomodoro"></h2>
+
+      <div class="grid2">
+        <label class="field" data-i18n="work_minutes"></label>
+        <input id="pm-work" type="number" min="1" value="25" />
+
+        <label class="field" data-i18n="break_minutes"></label>
+        <input id="pm-break" type="number" min="1" value="5" />
+      </div>
+
+      <div class="time" id="pm-time" aria-live="polite" aria-atomic="true">25:00</div>
+      <div class="progress" aria-hidden="true"><div id="pm-progress"></div></div>
+
+      <div class="controls">
+        <button id="pm-start" class="btn primary" data-i18n="start"></button>
+        <button id="pm-pause" class="btn" data-i18n="pause"></button>
+        <button id="pm-reset" class="btn outline" data-i18n="reset"></button>
+      </div>
+
+      <p class="hint" data-i18n="auto_switch_note"></p>
+    </section>
+  </template>
+
+  <!-- History View -->
+  <template id="history-template">
+    <section class="card" aria-labelledby="hs-title">
+      <h2 id="hs-title" data-i18n="history"></h2>
+
+      <div class="toolbar">
+        <input id="hs-search" class="input" data-i18n="search_sessions" placeholder="" aria-label="" />
+
+        <select id="hs-sort" aria-label="Sort by">
+          <option value="-created" data-i18n="newest"></option>
+          <option value="created" data-i18n="oldest"></option>
+          <option value="mode" data-i18n="mode"></option>
+          <option value="duration" data-i18n="duration"></option>
+        </select>
+
+        <button id="hs-export" class="btn" data-i18n="export_json"></button>
+
+        <label class="btn file" data-i18n="import_json">
+          <input id="hs-import" type="file" accept="application/json" hidden>
+        </label>
+      </div>
+
+      <ul id="hs-list" class="list" role="list"></ul>
+
+      <div class="pager" role="navigation" aria-label="History pagination">
+        <button class="btn" id="hs-prev">◀</button>
+        <span id="hs-page" aria-live="polite">1</span>
+        <button class="btn" id="hs-next">▶</button>
+      </div>
+    </section>
+  </template>
+
+  <audio id="beep" src="assets/beep.mp3" preload="auto"></audio>
+  <script type="module" src="./js/app.js"></script>
+</body>
+</html>

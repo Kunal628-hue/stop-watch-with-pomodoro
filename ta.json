@@ -1,0 +1,35 @@
+{
+  "stopwatch": "Stopwatch",
+  "pomodoro": "Pomodoro",
+  "history": "History",
+
+  "start": "Start",
+  "pause": "Pause",
+  "reset": "Reset",
+  "lap": "Lap",
+
+  "search_laps": "லாப் தேடுக",
+  "split": "Split",
+  "total": "Total",
+
+  "work_minutes": "Work (நிமி)",
+  "break_minutes": "Break (நிமி)",
+  "auto_switch_note": "Work ↔ Break தானாக மாறும் மற்றும் பீப் ஒலி வரும்.",
+
+  "search_sessions": "செஷன்ஸ் தேடுக",
+  "sort_by": "Sort செய்",
+  "newest": "புதியது",
+  "oldest": "பழையது",
+  "mode": "Mode",
+  "duration": "Duration",
+  "delete": "Delete",
+  "undo": "Undo",
+  "deleted_msg": "Delete செய்யப்பட்டது. Undo செய்வீர்களா?",
+  "export_json": "Export JSON",
+  "import_json": "Import JSON",
+
+  "language": "Language",
+  "theme": "தீம்",
+  "light_mode": "லைட் மோடு",
+  "dark_mode": "டார்க் மோடு"
+}

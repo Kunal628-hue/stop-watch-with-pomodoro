@@ -1,0 +1,35 @@
+{
+  "stopwatch": "Stopwatch",
+  "pomodoro": "Pomodoro",
+  "history": "হিস্ট্রি",
+
+  "start": "Start",
+  "pause": "Pause",
+  "reset": "Reset",
+  "lap": "Lap",
+
+  "search_laps": "ল্যাপ সার্চ করুন",
+  "split": "Split",
+  "total": "Total",
+
+  "work_minutes": "Work (মিনিট)",
+  "break_minutes": "Break (মিনিট)",
+  "auto_switch_note": "Work ↔ Break অটো-সুইচ হবে এবং একটি ছোট বীপ বাজবে।",
+
+  "search_sessions": "সেশন সার্চ করুন",
+  "sort_by": "Sort করুন",
+  "newest": "নতুন",
+  "oldest": "পুরোনো",
+  "mode": "Mode",
+  "duration": "Duration",
+  "delete": "Delete",
+  "undo": "Undo",
+  "deleted_msg": "Delete হয়েছে। Undo করবেন?",
+  "export_json": "Export JSON",
+  "import_json": "Import JSON",
+
+  "language": "Language",
+  "theme": "থিম",
+  "light_mode": "লাইট মোড",
+  "dark_mode": "ডার্ক মোড"
+}

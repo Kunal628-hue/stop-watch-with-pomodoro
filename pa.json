@@ -1,0 +1,35 @@
+{
+  "stopwatch": "Stopwatch",
+  "pomodoro": "Pomodoro",
+  "history": "ਹਿਸਟਰੀ",
+
+  "start": "Start",
+  "pause": "Pause",
+  "reset": "Reset",
+  "lap": "Lap",
+
+  "search_laps": "ਲੈਪ ਖੋਜੋ",
+  "split": "Split",
+  "total": "Total",
+
+  "work_minutes": "Work (ਮਿੰਟ)",
+  "break_minutes": "Break (ਮਿੰਟ)",
+  "auto_switch_note": "Work ↔ Break ਆਪੇ-ਸਵਿੱਚ ਹੋਵੇਗਾ ਅਤੇ ਇੱਕ ਬੀਪ ਵੀ ਆਵੇਗੀ।",
+
+  "search_sessions": "ਸੈਸ਼ਨ ਖੋਜੋ",
+  "sort_by": "Sort ਕਰੋ",
+  "newest": "ਨਵਾਂ",
+  "oldest": "ਪੁਰਾਣਾ",
+  "mode": "Mode",
+  "duration": "Duration",
+  "delete": "Delete",
+  "undo": "Undo",
+  "deleted_msg": "Delete ਹੋਇਆ। Undo ਕਰਨਾ ਹੈ?",
+  "export_json": "Export JSON",
+  "import_json": "Import JSON",
+
+  "language": "Language",
+  "theme": "ਥੀਮ",
+  "light_mode": "ਲਾਈਟ ਮੋਡ",
+  "dark_mode": "ਡਾਰਕ ਮੋਡ"
+}

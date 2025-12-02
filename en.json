@@ -1,0 +1,35 @@
+{
+  "stopwatch": "Stopwatch",
+  "pomodoro": "Pomodoro",
+  "history": "History",
+
+  "start": "Start",
+  "pause": "Pause",
+  "reset": "Reset",
+  "lap": "Lap",
+
+  "search_laps": "Search laps",
+  "split": "Split",
+  "total": "Total",
+
+  "work_minutes": "Work (min)",
+  "break_minutes": "Break (min)",
+  "auto_switch_note": "Auto-switches Work ↔ Break. Plays a short beep.",
+
+  "search_sessions": "Search sessions",
+  "sort_by": "Sort by",
+  "newest": "Newest",
+  "oldest": "Oldest",
+  "mode": "Mode",
+  "duration": "Duration",
+  "delete": "Delete",
+  "undo": "Undo",
+  "deleted_msg": "Deleted. Undo?",
+  "export_json": "Export JSON",
+  "import_json": "Import JSON",
+
+  "language": "Language",
+  "theme": "Theme",
+  "light_mode": "Light Mode",
+  "dark_mode": "Dark Mode"
+}

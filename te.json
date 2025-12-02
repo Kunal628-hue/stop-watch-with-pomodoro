@@ -1,0 +1,35 @@
+{
+  "stopwatch": "Stopwatch",
+  "pomodoro": "Pomodoro",
+  "history": "History",
+
+  "start": "Start",
+  "pause": "Pause",
+  "reset": "Reset",
+  "lap": "Lap",
+
+  "search_laps": "ల్యాప్ సెర్చ్ చేయండి",
+  "split": "Split",
+  "total": "Total",
+
+  "work_minutes": "Work (నిమి)",
+  "break_minutes": "Break (నిమి)",
+  "auto_switch_note": "Work ↔ Break ఆటో-స్విచ్ అవుతుంది మరియు బీప్ వస్తుంది.",
+
+  "search_sessions": "సెషన్లు సెర్చ్ చేయండి",
+  "sort_by": "Sort చేయండి",
+  "newest": "కొత్తవి",
+  "oldest": "పాతవి",
+  "mode": "Mode",
+  "duration": "Duration",
+  "delete": "Delete",
+  "undo": "Undo",
+  "deleted_msg": "Delete అయింది. Undo చేయాలా?",
+  "export_json": "Export JSON",
+  "import_json": "Import JSON",
+
+  "language": "Language",
+  "theme": "థీమ్",
+  "light_mode": "లైట్ మోడ్",
+  "dark_mode": "డార్క్ మోడ్"
+}
